@@ -23,7 +23,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   background: linear-gradient(deeppink, purple);
-  padding: 5.5rem;
+  padding: 8rem;
 }
 
 section {
@@ -115,7 +115,6 @@ header .navbar ul li a:hover {
   border-radius: 1rem;
   overflow: hidden;
 }
-
 .home {
   display: flex;
   align-items: center;
@@ -249,8 +248,7 @@ header .navbar ul li a:hover {
 }
 
 .education .box_container {
-  display: flex;
-  /* align-items: center; */
+  display: flex; /* align-items: center; */
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2rem 0;
@@ -303,7 +301,7 @@ header .navbar ul li a:hover {
   border-radius: 1rem;
 }
 .contact .row form .box {
-  background: rgba(255, 255, 255, 0.1);
+  background: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   padding: 0 1rem;
@@ -316,7 +314,7 @@ header .navbar ul li a:hover {
 }
 .contact .row form .box::placeholder {
   text-transform: capitalize;
-  color: #eee;
+  color: gray;
 }
 .contact .row form .box_massage {
   padding: 1rem;
@@ -346,4 +344,138 @@ header .navbar ul li a:hover {
 .contact .row .content .icons p {
   font-size: 1.5rem;
   color: #eee;
+}
+
+@media only screen and (max-width: 688px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  header {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .container {
+    height: 48rem;
+    width: 100%;
+    margin-top: 1.8rem;
+  }
+  .home h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .home .name span {
+    font-size: 2.5rem;
+  }
+  .home .post {
+    padding: 1rem 0;
+  }
+  .home .post span {
+    font-size: 2rem;
+  }
+  .home .share {
+    bottom: 3rem;
+  }
+  .home .share a {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  .about .content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .about .content p {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  .about .skills {
+    padding: 0.2rem 0;
+  }
+  .about .skills .progress {
+    margin: 1.2rem 0;
+    padding: 1rem;
+  }
+  .about .skills .progress h3 {
+    font-size: 1rem;
+  }
+
+  .service .box_container .box {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 45rem;
+  }
+  .service .box_container .box iconify-icon {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0 0;
+  }
+  .service .box_container .box p {
+    color: #eee;
+    font-size: 0.9rem;
+    padding: 0.3rem 5rem;
+  }
+  .education .box_container {
+    padding: 0.5rem 0;
+  }
+  .education .box_container .box {
+    width: 100%;
+    padding: 0 1rem;
+    padding-bottom: 2.3rem;
+    border-left: 0.1rem solid #eee;
+  }
+  .education .box_container .box .year {
+    font-size: 1.5rem;
+  }
+  .education .box_container .box h3 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+  }
+  .education .box_container .box p {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+  }
+  .contact .row {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  .contact .row form {
+    padding: 0.5rem 1rem;
+  }
+  .contact .row form .box {
+    padding: 0 1rem;
+    margin: 1rem 0;
+    height: 3.8rem;
+    width: 49%;
+    font-size: 1.3rem;
+  }
+  .contact .row form .box_massage {
+    padding: 0.8rem;
+    height: 6rem;
+  }
+  .contact .row form .btn {
+    margin-bottom: 1.2rem;
+  }
+  .contact .row .content {
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact .row .content .icons {
+    padding: 1rem 0rem;
+  }
+  .contact .row .content .icons h3 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+  .contact .row .content .icons p {
+    font-size: 1rem;
+  }
 }
