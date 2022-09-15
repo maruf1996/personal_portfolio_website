@@ -22,7 +22,12 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background: linear-gradient(deeppink, purple);
+  /* background: linear-gradient(deeppink, purple); */
+  /* background: linear-gradient(lightgreen, crimson); */
+  /* background: linear-gradient(blueviolet, deeppink); */
+  /* background: linear-gradient(coral, blueviolet); */
+  /* background: linear-gradient(#999, #111); */
+  background: linear-gradient(OrangeRed, FireBrick);
   padding: 8rem;
 }
 
@@ -256,6 +261,7 @@ header .navbar ul li a:hover {
 .education .box_container .box {
   width: 30rem;
   padding: 0 2rem;
+  margin-top: 1rem;
   padding-bottom: 4rem;
   border-left: 0.2rem solid #eee;
 }
@@ -283,6 +289,7 @@ header .navbar ul li a:hover {
   font-size: 1.3rem;
   color: #fff;
   padding-top: 1rem;
+  line-height: 2.2rem;
 }
 
 .contact .row {
@@ -309,7 +316,7 @@ header .navbar ul li a:hover {
   height: 4rem;
   width: 49%;
   font-size: 1.7rem;
-  color: #fff;
+  color: black;
   text-transform: none;
 }
 .contact .row form .box::placeholder {
@@ -347,10 +354,14 @@ header .navbar ul li a:hover {
 }
 
 @media only screen and (max-width: 688px) {
+  html {
+    overflow: auto;
+  }
   body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    overflow: auto;
   }
   .heading {
     font-size: 2.5rem;
@@ -364,6 +375,8 @@ header .navbar ul li a:hover {
     height: 48rem;
     width: 100%;
     margin-top: 1.8rem;
+    margin-bottom: 2rem;
+    overflow: visible;
   }
   .home h3 {
     font-size: 2rem;
@@ -382,7 +395,7 @@ header .navbar ul li a:hover {
     bottom: 3rem;
   }
   .home .share a {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
     font-size: 2rem;
     margin: 1rem;
   }
@@ -392,6 +405,7 @@ header .navbar ul li a:hover {
   }
   .about .content p {
     font-size: 1rem;
+    line-height: 2rem;
     padding: 0.5rem 0;
   }
   .about .skills {
@@ -412,13 +426,14 @@ header .navbar ul li a:hover {
   }
   .service .box_container .box iconify-icon {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: 0 0;
   }
   .service .box_container .box p {
     color: #eee;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.3rem 5rem;
+    line-height: 1.8rem;
   }
   .education .box_container {
     padding: 0.5rem 0;
@@ -476,6 +491,6 @@ header .navbar ul li a:hover {
     font-size: 1.5rem;
   }
   .contact .row .content .icons p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
